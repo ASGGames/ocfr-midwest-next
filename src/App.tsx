@@ -1,26 +1,19 @@
-import './App.css';
-import Navigation from './sections/Navigation';
-import Hero from './sections/Hero';
-import Services from './sections/Services';
-import About from './sections/About';
-import Portfolio from './sections/Portfolio';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
+import Hero from "@/sections/Hero"
+import About from "@/sections/About"
+import Services from "@/sections/Services"
+import Portfolio from "@/sections/Portfolio"
+import Contact from "@/sections/Contact"
+import Footer from "@/sections/Footer"
 
-function App() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
-      <main>
-        <Hero />
-        <Services />
-        <About />
-        <Portfolio />
-        <Contact />
-      </main>
+    <>
+      <Hero />
+      <About />
+      <Services />
+      <Portfolio />
+      <Contact />
       <Footer />
-    </div>
-  );
+    </>
+  )
 }
-
-export default App;
